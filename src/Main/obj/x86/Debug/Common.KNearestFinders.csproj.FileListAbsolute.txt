@@ -1,0 +1,7 @@
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\KNearestFinders\build\v1.0\bin\x86\debug\USC.GISResearchLab.Common.KNearestFinders.dll
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\KNearestFinders\build\v1.0\bin\x86\debug\USC.GISResearchLab.Common.KNearestFinders.pdb
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\KNearestFinders\src\obj\x86\Debug\Common.KNearestFinders.csprojResolveAssemblyReference.cache
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\KNearestFinders\src\obj\x86\Debug\USC.GISResearchLab.Common.KNearest.Panels.OutputFieldPanels.FrmOutputKNearestFieldsPanel.resources
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\KNearestFinders\src\obj\x86\Debug\Common.KNearestFinders.csproj.GenerateResource.Cache
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\KNearestFinders\src\obj\x86\Debug\USC.GISResearchLab.Common.KNearestFinders.dll
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\KNearestFinders\src\obj\x86\Debug\USC.GISResearchLab.Common.KNearestFinders.pdb

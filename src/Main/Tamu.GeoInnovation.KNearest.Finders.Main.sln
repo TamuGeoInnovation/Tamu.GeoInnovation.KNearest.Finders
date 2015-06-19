@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tamu", "Tamu", "{5B1D21D3-D044-4FE6-B931-ECD274F4263A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GeoInnovation", "GeoInnovation", "{BEC77F92-E25A-4795-875F-22D26F8A9D80}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{56568CBC-D9E0-4198-A8A1-E5EE9D6EBEA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "KNearest", "KNearest", "{6C858249-E434-4BF2-B2D8-779EB0B9D9C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KNearest.Finders", "KNearest.Finders.csproj", "{E3A92C73-B245-409F-B58F-7CA5DBC09D8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3A92C73-B245-409F-B58F-7CA5DBC09D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3A92C73-B245-409F-B58F-7CA5DBC09D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3A92C73-B245-409F-B58F-7CA5DBC09D8B}.Debug|x86.ActiveCfg = Debug|x86
+		{E3A92C73-B245-409F-B58F-7CA5DBC09D8B}.Debug|x86.Build.0 = Debug|x86
+		{E3A92C73-B245-409F-B58F-7CA5DBC09D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3A92C73-B245-409F-B58F-7CA5DBC09D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3A92C73-B245-409F-B58F-7CA5DBC09D8B}.Release|x86.ActiveCfg = Release|x86
+		{E3A92C73-B245-409F-B58F-7CA5DBC09D8B}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BEC77F92-E25A-4795-875F-22D26F8A9D80} = {5B1D21D3-D044-4FE6-B931-ECD274F4263A}
+		{56568CBC-D9E0-4198-A8A1-E5EE9D6EBEA9} = {BEC77F92-E25A-4795-875F-22D26F8A9D80}
+		{6C858249-E434-4BF2-B2D8-779EB0B9D9C8} = {BEC77F92-E25A-4795-875F-22D26F8A9D80}
+		{E3A92C73-B245-409F-B58F-7CA5DBC09D8B} = {6C858249-E434-4BF2-B2D8-779EB0B9D9C8}
+	EndGlobalSection
+EndGlobal
