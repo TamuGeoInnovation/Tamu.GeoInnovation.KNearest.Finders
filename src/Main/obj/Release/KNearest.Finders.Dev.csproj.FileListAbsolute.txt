@@ -1,5 +1,0 @@
-C:\DevSource\Tamu\GeoInnovation\KNearest.Finders\src\Main\obj\Release\USC.GISResearchLab.Common.KNearest.Panels.OutputFieldPanels.FrmOutputKNearestFieldsPanel.resources
-C:\DevSource\Tamu\GeoInnovation\KNearest.Finders\src\Main\obj\Release\KNearest.Finders.Dev.csproj.GenerateResource.Cache
-C:\DevSource\Tamu\GeoInnovation\KNearest.Finders\src\Main\obj\Release\Tamu.GeoInnovation.KNearest.Finders.dll
-C:\DevSource\Tamu\GeoInnovation\KNearest.Finders\src\Main\obj\Release\KNearest.Finders.Dev.csprojResolveAssemblyReference.cache
-C:\DevSource\Tamu\GeoInnovation\KNearest.Finders\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.KNearest.Finders.dll
