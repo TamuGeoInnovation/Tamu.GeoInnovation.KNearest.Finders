@@ -9,6 +9,7 @@ using USC.GISResearchLab.Common.Utils.Databases;
 
 namespace USC.GISResearchLab.Common.KNearest.KNearestFinders
 {
+    [Serializable]
     public class KNearestFinder
     {
 
@@ -78,6 +79,7 @@ namespace USC.GISResearchLab.Common.KNearest.KNearestFinders
             return ret;
         }
 
+        // returns results in meters. Assumes input source database is in EPSG 4269 (NAD83) NOT  EPSG:4326 (WGS 84)
         public DataTable GetKNearestRecordsAsDataTable(double longitude, double latitude, double k, string table, double strartingThreshold)
         {
             DataTable ret = null;
