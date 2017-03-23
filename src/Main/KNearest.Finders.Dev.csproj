@@ -20,7 +20,7 @@
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -48,6 +48,7 @@
     <WarningLevel>4</WarningLevel>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
@@ -57,6 +58,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -67,6 +69,7 @@
     <PlatformTarget>x86</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <OutputPath>..\build\v1.0\bin\x86\release\</OutputPath>
@@ -75,8 +78,13 @@
     <PlatformTarget>x86</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.SqlServer.Types, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\..\..\_RepoConfig\SolutionFiles\packages\Microsoft.SqlServer.Types.11.0.2\lib\net20\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -105,6 +113,7 @@
     <Compile Include="Runners\Queries\Options\BatchKNearest.cs" />
     <Compile Include="Runners\Queries\Options\BatchKNearestOptions.cs" />
     <Compile Include="Runners\Queries\Options\SingleKNearest.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Panels\OutputFieldsPanels\FrmOutputKNearestFieldsPanel.resx">
@@ -158,6 +167,28 @@
       <Name>Common.Data.Databases.Dev</Name>
       <Private>False</Private>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\_RepoConfig\SolutionFiles\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x64\msvcr100.dll">
+      <Link>SqlServerTypes\x64\msvcr100.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\_RepoConfig\SolutionFiles\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x64\SqlServerSpatial110.dll">
+      <Link>SqlServerTypes\x64\SqlServerSpatial110.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\_RepoConfig\SolutionFiles\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x86\msvcr100.dll">
+      <Link>SqlServerTypes\x86\msvcr100.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\_RepoConfig\SolutionFiles\packages\Microsoft.SqlServer.Types.11.0.2\nativeBinaries\x86\SqlServerSpatial110.dll">
+      <Link>SqlServerTypes\x86\SqlServerSpatial110.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\readme.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!--  
