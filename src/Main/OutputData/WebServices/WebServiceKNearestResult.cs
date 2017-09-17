@@ -2,9 +2,9 @@
 using System.Data;
 using System.Text;
 using System.Xml.Serialization;
+using USC.GISResearchLab.Common.Core.JSON;
 //using USC.GISResearchLab.Common.Core.JSON;
 using USC.GISResearchLab.Core.WebServices.ResultCodes;
-using USC.GISResearchLab.Common.Core.JSON;
 
 namespace USC.GISResearchLab.Common.KNearest.OutputData.WebServices
 {
