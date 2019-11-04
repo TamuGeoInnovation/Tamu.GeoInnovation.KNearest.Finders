@@ -203,7 +203,7 @@ namespace USC.GISResearchLab.Census.Runners.Databases
                 if (dataReader != null)
                 {
 
-                    
+
 
                     while (dataReader.Read())
                     {
@@ -231,14 +231,14 @@ namespace USC.GISResearchLab.Census.Runners.Databases
                                         string id = DatabaseUtils.StringIfNull(dataReader["Id"]);
                                         double longitude = DatabaseUtils.DoubleIfNull(dataReader["longitude"]);
                                         double latitude = DatabaseUtils.DoubleIfNull(dataReader["latitude"]);
-                                        
+
 
                                         if (!String.IsNullOrEmpty(id) && longitude != 0 && latitude != 0)
                                         {
                                             object[] dataItems = new object[3];
                                             dataItems[0] = longitude;
                                             dataItems[1] = latitude;
-                                            
+
 
                                             RecordDataItem recordDataItem = new RecordDataItem(id, dataItems);
 
@@ -358,7 +358,7 @@ namespace USC.GISResearchLab.Census.Runners.Databases
 
         public void ProcessRecordInQueue(object o)
         {
-            
+
             try
             {
 
@@ -374,9 +374,9 @@ namespace USC.GISResearchLab.Census.Runners.Databases
                 if (TraceSource != null)
                 {
                     TraceSource.TraceEvent(TraceEventType.Information, (int)ProcessEvents.Running, " - {0}, {1}, {2}",
-                     new object[] { 
-                        "200", 
-                        "Success", 
+                     new object[] {
+                        "200",
+                        "Success",
                         result.ToString()
                         });
                 }
@@ -408,23 +408,23 @@ namespace USC.GISResearchLab.Census.Runners.Databases
 
                 if (dataReader != null)
                 {
-                    while(dataReader.Read())
+                    while (dataReader.Read())
                     {
                         if (!ShouldStop)
                         {
                             string id = DatabaseUtils.StringIfNull(dataReader["Id"]);
                             double longitude = DatabaseUtils.DoubleIfNull(dataReader["longitude"]);
                             double latitude = DatabaseUtils.DoubleIfNull(dataReader["latitude"]);
-                           
+
 
 
                             if (!String.IsNullOrEmpty(id) && longitude != 0 && latitude != 0)
                             {
-                                
+
                                 object[] record = new object[3];
                                 record[0] = longitude;
                                 record[1] = latitude;
-                                
+
 
                                 if (TraceSource != null)
                                 {
@@ -440,9 +440,9 @@ namespace USC.GISResearchLab.Census.Runners.Databases
                                     if (TraceSource != null)
                                     {
                                         TraceSource.TraceEvent(TraceEventType.Information, (int)ProcessEvents.Running, " - {0}, {1}, {2}",
-                                         new object[] { 
-                                            "200", 
-                                            "Success", 
+                                         new object[] {
+                                            "200",
+                                            "Success",
                                             result.ToString()
                                             });
                                     }

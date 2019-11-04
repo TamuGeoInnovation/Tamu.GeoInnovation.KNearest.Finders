@@ -89,7 +89,7 @@ namespace USC.GISResearchLab.Common.KNearest.KNearestFinders
                 if ((latitude <= 90 && latitude >= -90) && (longitude <= 180 && longitude >= -180))
                 {
                     string sql = "";
-                    sql += " USE " + QueryManager.Connection.Database + ";" ;
+                    sql += " USE " + QueryManager.Connection.Database + ";";
                     sql += " SELECT ";
                     sql += "  TOP " + k;
                     sql += "  UniqueId as ID, ";
@@ -188,15 +188,15 @@ namespace USC.GISResearchLab.Common.KNearest.KNearestFinders
                     sql += "  INTPTLON10 as X, ";
                     sql += "  Geography::Point(@latitude1, @longitude1, 4269).STDistance(shapeGeog) as distance, ";
                     sql += "  UniqueId, ";
-                   sql += "  stateFp10, ";
-                   sql += "  countyFp10, ";
-                   sql += "  GEOID10, ";
-                   sql += "  Name10, ";
-                   sql += "  NameLsad10, ";
-                   sql += "  Mtfcc10, ";
-                   sql += "  FuncStat10 ";
-                  
-                    
+                    sql += "  stateFp10, ";
+                    sql += "  countyFp10, ";
+                    sql += "  GEOID10, ";
+                    sql += "  Name10, ";
+                    sql += "  NameLsad10, ";
+                    sql += "  Mtfcc10, ";
+                    sql += "  FuncStat10 ";
+
+
                     sql += " FROM ";
                     sql += " [" + QueryManager.Connection.Database + "].[dbo]." + table;
 

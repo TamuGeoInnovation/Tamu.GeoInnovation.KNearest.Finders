@@ -16,7 +16,7 @@ namespace USC.GISResearchLab.Census.Runners.Queries.Options
         public string FieldNearestLatitude1 { get; set; }
         public string FieldNearestLongitude1 { get; set; }
         public string FieldNearestDistance1 { get; set; }
-        
+
 
         #endregion
     }

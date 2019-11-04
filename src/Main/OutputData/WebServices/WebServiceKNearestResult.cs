@@ -21,13 +21,13 @@ namespace USC.GISResearchLab.Common.KNearest.OutputData.WebServices
         public string QueryStatusCodeName
         {
             get { return QueryResultCodeManager.GetStatusCodeName(QueryStatusCodes); }
-            set { ; }
+            set {; }
         }
 
         public int QueryStatusCodeValue
         {
             get { return QueryResultCodeManager.GetStatusCodeValue(QueryStatusCodes); }
-            set { ; }
+            set {; }
         }
 
         public double Version { get; set; }
@@ -103,7 +103,7 @@ namespace USC.GISResearchLab.Common.KNearest.OutputData.WebServices
             sb.Append("\t[").AppendLine();
             if (ResultDataTable != null && ResultDataTable.Rows.Count > 0)
             {
-                for( int i=0; i<ResultDataTable.Rows.Count; i++)
+                for (int i = 0; i < ResultDataTable.Rows.Count; i++)
                 {
                     DataRow dataRow = ResultDataTable.Rows[i];
 
@@ -175,6 +175,6 @@ namespace USC.GISResearchLab.Common.KNearest.OutputData.WebServices
             return AsString();
         }
 
-        
+
     }
 }

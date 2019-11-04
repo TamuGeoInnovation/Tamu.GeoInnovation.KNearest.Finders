@@ -27,7 +27,7 @@ namespace USC.GISResearchLab.Common.KNearest.Metadata.OutputFields
             ret.Add(new DatabaseFieldMapping(prefix + "CBSAMicro", DatabaseSuperDataType.String, 20));
             ret.Add(new DatabaseFieldMapping(prefix + "MetDivFips", DatabaseSuperDataType.String, 20));
             ret.Add(new DatabaseFieldMapping(prefix + "StateFips", DatabaseSuperDataType.String, 20));
-            
+
             return ret;
         }
     }

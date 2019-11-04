@@ -74,7 +74,7 @@ namespace USC.GISResearchLab.Common.KNearest.Panels.OutputFieldPanels
             }
         }
 
-        public void SetComboBoxItems(ComboBox cbo, string [] items)
+        public void SetComboBoxItems(ComboBox cbo, string[] items)
         {
             cbo.Items.Clear();
             cbo.Items.AddRange(items);
@@ -84,7 +84,7 @@ namespace USC.GISResearchLab.Common.KNearest.Panels.OutputFieldPanels
         public void BindComboBox(ComboBox cbo, object dataSource)
         {
             cbo.DataBindings.Add("Text", dataSource, "Value", true, DataSourceUpdateMode.OnPropertyChanged);
-            SetSelectedComboBoxItem(cbo, txtPrefix.Text +Prefix + ((FieldMapping)dataSource).DefaultValue);
+            SetSelectedComboBoxItem(cbo, txtPrefix.Text + Prefix + ((FieldMapping)dataSource).DefaultValue);
         }
 
         public void SetSelectedComboBoxItem(ComboBox cbo, string value)
@@ -121,17 +121,17 @@ namespace USC.GISResearchLab.Common.KNearest.Panels.OutputFieldPanels
                     SchemaManager.AddColumnsToTable(TableName, columnNames, dataTypes, columnMaxLengths, columnPrecisions, true);
                     SetAllComboBoxItems();
 
-                    SetSelectedComboBoxItem(cboStateFips, txtPrefix.Text +Prefix + "StateFips");
-                    SetSelectedComboBoxItem(cboCountyFips, txtPrefix.Text +Prefix + "CountyFips");
-                    SetSelectedComboBoxItem(cboTract, txtPrefix.Text +Prefix + "Tract");
-                    SetSelectedComboBoxItem(cboBlockGroup, txtPrefix.Text +Prefix + "BlockGroup");
-                    SetSelectedComboBoxItem(cboBlock, txtPrefix.Text +Prefix + "Block");
-                    SetSelectedComboBoxItem(cboCBSAFips, txtPrefix.Text +Prefix + "CBSAFips");
-                    SetSelectedComboBoxItem(cboCBSAMicro, txtPrefix.Text +Prefix + "CBSAMicro");
-                    SetSelectedComboBoxItem(cboMCDFips, txtPrefix.Text +Prefix + "MCDFips");
-                    SetSelectedComboBoxItem(cboMetDivFips, txtPrefix.Text +Prefix + "MetDivFips");
-                    SetSelectedComboBoxItem(cboMSAFips, txtPrefix.Text +Prefix + "MSAFips");
-                    SetSelectedComboBoxItem(cboPlaceFips, txtPrefix.Text +Prefix + "PlaceFips");
+                    SetSelectedComboBoxItem(cboStateFips, txtPrefix.Text + Prefix + "StateFips");
+                    SetSelectedComboBoxItem(cboCountyFips, txtPrefix.Text + Prefix + "CountyFips");
+                    SetSelectedComboBoxItem(cboTract, txtPrefix.Text + Prefix + "Tract");
+                    SetSelectedComboBoxItem(cboBlockGroup, txtPrefix.Text + Prefix + "BlockGroup");
+                    SetSelectedComboBoxItem(cboBlock, txtPrefix.Text + Prefix + "Block");
+                    SetSelectedComboBoxItem(cboCBSAFips, txtPrefix.Text + Prefix + "CBSAFips");
+                    SetSelectedComboBoxItem(cboCBSAMicro, txtPrefix.Text + Prefix + "CBSAMicro");
+                    SetSelectedComboBoxItem(cboMCDFips, txtPrefix.Text + Prefix + "MCDFips");
+                    SetSelectedComboBoxItem(cboMetDivFips, txtPrefix.Text + Prefix + "MetDivFips");
+                    SetSelectedComboBoxItem(cboMSAFips, txtPrefix.Text + Prefix + "MSAFips");
+                    SetSelectedComboBoxItem(cboPlaceFips, txtPrefix.Text + Prefix + "PlaceFips");
                 }
             }
             catch (Exception ex)
