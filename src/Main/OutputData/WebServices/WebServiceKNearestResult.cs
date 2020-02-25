@@ -2,9 +2,8 @@
 using System.Data;
 using System.Text;
 using System.Xml.Serialization;
+using Tamu.GeoInnovation.Common.Web.ResponseCodes.v5_0_0;
 using USC.GISResearchLab.Common.Core.JSON;
-//using USC.GISResearchLab.Common.Core.JSON;
-using USC.GISResearchLab.Core.WebServices.ResultCodes;
 
 namespace USC.GISResearchLab.Common.KNearest.OutputData.WebServices
 {
@@ -20,13 +19,13 @@ namespace USC.GISResearchLab.Common.KNearest.OutputData.WebServices
 
         public string QueryStatusCodeName
         {
-            get { return QueryResultCodeManager.GetStatusCodeName(QueryStatusCodes); }
+            get { return ResponseCodeManager.GetStatusCodeName(QueryStatusCodes); }
             set {; }
         }
 
         public int QueryStatusCodeValue
         {
-            get { return QueryResultCodeManager.GetStatusCodeValue(QueryStatusCodes); }
+            get { return ResponseCodeManager.GetStatusCodeValue(QueryStatusCodes); }
             set {; }
         }
 

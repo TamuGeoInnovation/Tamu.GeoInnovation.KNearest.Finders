@@ -162,6 +162,14 @@
       <Name>Common.Data.Databases.Dev</Name>
       <Private>False</Private>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\Common.Web.Enums.5.0.0\src\Main\Common.Web.Enums.5.0.0.Dev.csproj">
+      <Project>{2d531de2-6064-40bd-9b0d-0ede1f154d16}</Project>
+      <Name>Common.Web.Enums.5.0.0.Dev</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common.Web.ResponseCodes.5.0.0\src\Main\Common.Web.ResponseCodes.5.0.0.Dev.csproj">
+      <Project>{c9d1fccb-df18-4d8c-94a9-eff961b3ee8f}</Project>
+      <Name>Common.Web.ResponseCodes.5.0.0.Dev</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!--  
