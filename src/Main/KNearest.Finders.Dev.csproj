@@ -87,9 +87,6 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Management" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -161,10 +158,6 @@
       <Project>{A7DF15F2-1210-4431-B223-A3A2810DC14A}</Project>
       <Name>Common.Data.Databases.Dev</Name>
       <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\Common.Web.Enums.5.0.0\src\Main\Common.Web.Enums.5.0.0.Dev.csproj">
-      <Project>{2d531de2-6064-40bd-9b0d-0ede1f154d16}</Project>
-      <Name>Common.Web.Enums.5.0.0.Dev</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Common.Web.ResponseCodes.5.0.0\src\Main\Common.Web.ResponseCodes.5.0.0.Dev.csproj">
       <Project>{c9d1fccb-df18-4d8c-94a9-eff961b3ee8f}</Project>
