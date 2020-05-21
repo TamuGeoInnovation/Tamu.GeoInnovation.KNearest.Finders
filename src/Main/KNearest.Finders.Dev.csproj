@@ -150,9 +150,8 @@
       <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Common.Data.Databases.Runners\Src\Main\Common.Data.Databases.Runners.Dev.csproj">
-      <Project>{5A003DA0-31D1-48F6-81F7-0A0301362AC9}</Project>
+      <Project>{5a003da0-31d1-48f6-81f7-0a0301362ac9}</Project>
       <Name>Common.Data.Databases.Runners.Dev</Name>
-      <Private>False</Private>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Common.Data.Databases\Src\Main\Common.Data.Databases.Dev.csproj">
       <Project>{A7DF15F2-1210-4431-B223-A3A2810DC14A}</Project>
